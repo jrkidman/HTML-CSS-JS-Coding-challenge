@@ -1,6 +1,6 @@
 
-const remove = document.getElementById("remove");
-const add = document.getElementById("add");
+const removeStar = document.getElementById("remove");
+const addStar = document.getElementById("add");
 const counter = document.getElementById("count");
 const starsDisplay = document.querySelector(".stars-display");
 
@@ -22,12 +22,12 @@ const updateNumber = () => {
 };
 updateNumber();
 
-remove.addEventListener("click", () => {
+removeStar.addEventListener("click", () => {
     if (count > 0) count -= 1;
     updateNumber();
 });
 
-add.addEventListener("click", () => {
+addStar.addEventListener("click", () => {
     if (count <= 4) {
         count += 1;
         updateNumber();
