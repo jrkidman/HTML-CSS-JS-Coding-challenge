@@ -2,7 +2,7 @@
 const removeStar = document.getElementById("remove");
 const addStar = document.getElementById("add");
 const counter = document.getElementById("count");
-const starsDisplay = document.querySelector(".stars-display");
+const starsDisplay = document.getElementById("stars-display");
 
 let count = 5;
 
